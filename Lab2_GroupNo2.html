@@ -11,7 +11,7 @@
     
     <div id="inner">
     <fieldset style="border: 2px solid black">
-        <legend style="border: 2px solid black"><h2>Create a New Event</h2></legend>
+        
     <form onsubmit="displayEvent()">
         Event Type:
     <select required id="Type">
@@ -23,11 +23,11 @@
     </select><br><br>
 
         Event Name:
-    <textarea id="Name" cols="70" rows="1" required></textarea><br><br>
+    <textarea id="Name" cols="70" rows="1" minlength="5" maxlength="50" required></textarea><br><br>
 
         Event Date: 
     <input type="date" id="Start" min="2020-09-02" required> to
-    <input type="date" id="End" min="2020-09-02" required> <br><br>
+    <input type="date" id="End" min="Start" required> <br><br>
 
         Posting Date:
     <input type="date" id="Post" min="2020-08-19" required> <br><br><br><br>
@@ -53,6 +53,10 @@
     
     </form>
 </fieldset>
+<p>Changes
+    
+</p>
+
 </div>
 
 </body>
